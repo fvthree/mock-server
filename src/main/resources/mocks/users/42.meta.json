@@ -1,0 +1,9 @@
+{
+  "status": 202,
+  "headers": {
+    "X-Mock-Server": "spring-mock",
+    "Cache-Control": "no-store"
+  },
+  "delayMs": 250,
+  "contentType": "application/json"
+}
