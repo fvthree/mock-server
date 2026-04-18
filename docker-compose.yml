@@ -5,4 +5,5 @@ services:
       dockerfile: Dockerfile
     container_name: mock-server
     ports:
-      - "8080:8080"
+      # App listens on 10000 by default (see application.properties); map host 8080 for convenience.
+      - "8080:10000"

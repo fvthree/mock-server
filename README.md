@@ -13,7 +13,10 @@ mvn spring-boot:run
 ```
 
 Application URL:
-- http://localhost:8080/
+
+- http://localhost:10000/
+
+Default port comes from `server.port` in `application.properties` (override with `PORT` or `-Dserver.port=...`).
 
 ## Dynamic mock API behavior
 
@@ -40,7 +43,9 @@ Build and start container:
 
 ```bash
 docker compose up --build
+docker compose up
 ```
 
-Application URL:
+The container serves the app on port **10000**; Compose maps **host 8080 → container 10000**, so you use the same URL as typical Spring examples:
+
 - http://localhost:8080/
